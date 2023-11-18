@@ -1,0 +1,31 @@
+* {
+    color: red;
+    font-size: 16px;
+}
+
+/* ID 접근 (#) */
+#in-txt {
+    color: green;
+    font-size: 50px
+}
+
+#ex-title {
+    color: gray;
+    font-size: 50px
+}
+
+/* class 접근 (.) */
+.in-txt {
+    color: blue;
+    font-size: 50px
+}
+
+#in-title {
+  color: red;
+  font-size: 16px;
+}
+
+.in-title {
+  color: orange;
+  font-size: 16px;
+}  

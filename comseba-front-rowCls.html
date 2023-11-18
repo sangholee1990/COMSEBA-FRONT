@@ -5,8 +5,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- CSS 스타일 시트 영역 -->
+
+    <!-- 내부 스타일 시트 -->
+    <!-- <style>
+        p {
+            color: red;
+            font-size: 16px;
+        }
+
+        /* ID 접근 (#) */
+        #in-txt {
+            color: green;
+            font-size: 50px
+        }
+
+        /* class 접근 (.) */
+        .in-txt {
+            color: blue;
+            font-size: 50px
+        }
+
+        #in-title {
+          color: red;
+          font-size: 16px;
+        }
+
+        .in-title {
+          color: orange;
+          font-size: 16px;
+        }  
+      </style> -->
+      <!-- <P>sdsdd</P> -->
+
+    <!-- 외부 스타일 시트 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<!-- HTML 영역 -->
 <body>
     <!-- ======================================================================= -->
     <!-- 2023.11.04 -->
@@ -17,11 +54,11 @@
 
     <!--주석 Ctcl + /  -->
     <!-- 문서의 정보 계층을 구조한 태그 -->
-    <h1>h1</h1>
-    <h2>h2</h2>
-    <h3>h3</h3>
-    <h4>h4</h4>
-    <h5>h5</h5>
+    <h1 style="color: blue;">h1</h1>
+    <h2 style="color: red; font-size: 20px">h2</h2>
+    <h3 style="color: red; font-size: 20px">h3</h3>
+    <h4 style="color: red; font-size: 20px">h4</h4>
+    <h5 style="color: red; font-size: 20px">h5</h5>
     <h6>h6</h6>
 
     <!-- 빈 콘텐츠 영역 (사용자 설정하기 좋음) -->
@@ -180,10 +217,6 @@
 
     </form>
     
-
-
-
-
     <!-- 입력양식 태그 -->
     <form>
         <!-- 텍스트 필드 -->
@@ -253,14 +286,40 @@
         <br>
 
 
+        <!-- CSS 기본 및 복합 선택자 -->
+        <!-- 1) 인라인 스타일 (Inline Styles)  -->
+        <p style="color: blue; font-size: 20px;">이것은 20px 청색 글자입니다.</p>
+        <p style="color: red; font-size: 30px;">이것은 30px 빨강 글자입니다.</p>
+        <p style="color: green; font-size: 40px;">이것은 40px 초록색 글자입니다.</p>
+
+        <!-- 2) 내부 스타일 시트 (Internal Style Sheet) -->
+        <p>빨강색 16px</p>
+ 
+        <p style="color: green; font-size: 50px">텍스트 50px 초록색 (인라인 방법)</p>
+        <p id="in-txt">텍스트 50px 초록색 (내부 스타일 시트-id)</p>
+        <p class="in-txt">텍스트 50px 초록색 (내부 스타일 시트-id)</p>
+
+
+        <p id="in-title">이것은 빨간색 글자입니다.</p>
+        <p class="in-title">이것은 주황색 글자입니다.</p>
+
+        
+        <!-- 3) 외부 스타일 시트 (External Style Sheet) -->
+        <p id="ex-title">이것은 회색 50px 글자입니다.</p>
+        <!-- <p class="ex-title">이것은 주황색 60px 글자입니다.</p> -->
+
+        <!-- 자바스크립트 11주차 소개 -->
         <!-- 전역 속성을 위한 버튼 태그 -->
-        <button type="button" id="btn-id">이벤트 버튼</button>
-        <button type="button" class="btn-cls">이벤트 버튼2</button>
-        <button type="button" onclick="alert('이벤트 버튼3')">이벤트 버튼3</button>
-        <button type="buttodn" id="btn-id2">이벤트 버튼4</button>
+        <!-- <button type="button" id="btn-id">이벤트 버튼</button> -->
+        <!-- <button type="button" class="btn-cls">이벤트 버튼2</button> -->
+        <!-- <button type="button" onclick="alert('이벤트 버튼3')">이벤트 버튼3</button> -->
+        <!-- <button type="buttodn" id="btn-id2">이벤트 버튼4</button> -->
     </form>
 </body>
 
+
+
+<!-- 자바스크립트 영역 -->
 <script>
     // id 접근 : 다양한 이벤트
     let idTag = document.getElementById("btn-id");
