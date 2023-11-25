@@ -1,0 +1,74 @@
+/* map.css */
+@import url("./reset.css");
+@import url("./common.css");
+
+/**/
+/* 헤더 영역 */
+/**/
+.map-page {
+  padding: 0 10%; /* body태그에 좌우 여백 부여*/
+}
+
+.map__header {
+  display: flex;
+  justify-content: space-between; /* 요소를 좌,우로 정렬 */
+}
+
+.map__header img {
+  cursor: pointer;
+}
+
+.map__header__right {
+  /* 헤더의 오른쪽 부분 */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* flex 요소간의 간격을 정해줄 수 있다.*/
+}
+
+.map__header__right a {
+  color: var(--main-color);
+}
+
+/**/
+/* body 영역 */
+/**/
+.map__body {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10rem auto;
+  height: 500px;
+}
+
+.map__body__left {
+  width: 50%;
+}
+
+.map__body__right {
+  position: relative; /* 부모 영역으로 설정해서 아래에 위치할 수 있게*/
+  color: white;
+  background: var(--dark-gray);
+  padding: 2rem;
+}
+
+.map__body__right p:nth-of-type(1) {
+  font-size: 24px;
+  margin-bottom: 3rem;
+}
+
+.map__body__right p:nth-of-type(2) {
+  font-size: 30px;
+}
+
+.map__body__right p:nth-of-type(3) {
+  position: absolute; /* 밑에 붙어있어야하는 속성 */
+  bottom: 3rem;
+  font-size: 0.7rem;
+}
+
+.map__body__right p:nth-of-type(4) {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 0.7rem;
+}

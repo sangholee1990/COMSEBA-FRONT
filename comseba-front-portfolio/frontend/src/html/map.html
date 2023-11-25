@@ -1,0 +1,36 @@
+<!-- 지도 페이지 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/map.css" />
+    <title>지도</title>
+  </head>
+  <body>
+    <div class="map-page">
+      <header class="map__header">
+        <img src="../../images/comseba_logo.png" alt="컴세바로고" />
+        <div class="map__header__right">
+          <a href="/map">오시는 길</a>
+          <a href="/guest">방명록</a>
+        </div>
+      </header>
+      <div class="map__body">
+        <div id="map" class="map__body__left">지도</div>
+        <div class="map__body__right">
+          <p>INCHEON COMSEBA</p>
+          <p>컴세바 써니랩학원인천지점</p>
+          <p>인천광역시 연수구 동춘동 (먼우금로 92) 대광빌딩 5층</p>
+          <p>CALL : 032. 822. 4300 / 010. 4591. 8351</p>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=61s5hydgrc"
+    ></script>
+    <script src="/src/js/map.js"></script>
+  </body>
+</html>

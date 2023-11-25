@@ -1,0 +1,88 @@
+/* guestBook.css */
+@import url("./reset.css");
+@import url("./common.css");
+
+/**/
+/* 헤더 영역 */
+/**/
+.guest {
+  padding: 0 10%; /* body태그에 좌우 여백 부여*/
+}
+
+.guest__header {
+  display: flex;
+  justify-content: space-between; /* 요소를 좌,우로 정렬 */
+}
+
+.guest__header img {
+  cursor: pointer;
+}
+
+.guest__header__right {
+  /* 헤더의 오른쪽 부분 */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* flex 요소간의 간격을 정해줄 수 있다.*/
+}
+
+.guest__header__right a {
+  color: var(--main-color);
+}
+
+/* 방명록 입력 */
+.guest__form {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column; /* 요소가 수직으로 쌓이도록 */
+  gap: 1rem;
+}
+
+.guest__form p {
+  font-size: 32px;
+}
+
+.guest__form input {
+  width: 70%;
+}
+
+.guest__form textarea {
+  width: 70%;
+  resize: none; /* 사용자가 크기를 조절할 수 없게*/
+}
+
+.guest__form button {
+  width: 15%;
+  height: 30px;
+  background-color: var(--btn);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* 댓글 */
+.guest__comment {
+  border-top: 1px solid var(--dark-gray);
+  margin-top: 2rem;
+  display: flex;
+}
+
+.guest__comment__left {
+  padding: 2rem;
+}
+
+.guest__comment__left__name {
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 1rem;
+}
+
+.guest__comment__right {
+  width: 70%;
+  padding: 1rem;
+}
+
+.guest__comment__right__time {
+  margin-top: 1rem;
+  color: var(--comment-time);
+}

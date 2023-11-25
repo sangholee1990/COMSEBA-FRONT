@@ -1,0 +1,28 @@
+/* common.css */
+
+body {
+  margin-top: 2rem; /* 위쪽으로 margin 부여 */
+}
+
+a {
+  text-decoration: none; /* a태그의 밑줄을 사라지게 함 */
+}
+
+.border-box {
+  border: none;
+  border-radius: 10px;
+  background: var(--dark-gray);
+  color: white;
+}
+
+/* css 변수들 */
+:root {
+  --main-color: #445964;
+  --dark-gray: #263138;
+  --logo-background: #343434;
+  --soft-grey: #dfdfdf;
+  --footer-back: #ededed;
+  --footer-font: #a4a4a4;
+  --btn: #515151;
+  --comment-time: #18a0fbaa;
+}

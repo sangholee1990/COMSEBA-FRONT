@@ -1,0 +1,396 @@
+/* home.css */
+@import url("./reset.css");
+@import url("./common.css");
+
+/**/
+/* 헤더 영역 */
+/**/
+.home {
+  padding: 0 10%; /* body태그에 좌우 여백 부여*/
+}
+
+.home__header {
+  display: flex;
+  justify-content: space-between; /* 요소를 좌,우로 정렬 */
+}
+
+.home__header img {
+  cursor: pointer;
+}
+
+.home__header__right {
+  /* 헤더의 오른쪽 부분 */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* flex 요소간의 간격을 정해줄 수 있다.*/
+}
+
+.home__header__right a {
+  color: var(--main-color);
+}
+
+/**/
+/* 학원 소개 영역 */
+/**/
+
+.home__intro {
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* position-absolute가 있기때문에 설정 */
+  margin-top: 5rem;
+}
+
+.home__intro__left {
+  width: 50%; /* 50% 크기로 왼쪽,오른쪽을 설정하기 위함*/
+}
+
+.home__intro__left__text {
+  color: var(--main-color);
+}
+
+.home__intro__left__text p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.home__intro__left__rink-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem; /* 좌우:0.5 , 상하 1 padding 부여*/
+  cursor: pointer;
+}
+
+.home__intro__left__sns {
+  position: absolute; /* sns관련 부분을 항상 왼쪽하단에 고정 */
+  /* 왼쪽하단의 기준이 부모가 position : relative된 부분임 */
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px; /* sns의 크기를 고정적으로 설정 */
+}
+
+.home__intro__left__sns p {
+  font-size: 40px;
+  color: var(--main-color);
+  font-weight: 700; /* font의 굵기 설정*/
+}
+
+.home__intro__left__sns img {
+  cursor: pointer; /* 이미지에 마우스를 가져다 대면 커서모양이 변겨오디ㅔㄱ */
+}
+
+.home__intro__right {
+  width: 50%;
+}
+
+.home__intro__right img {
+  width: 100%; /* 이미지의 크기를 유동적으로 설정하기 위함*/
+}
+
+/* home-설명 부분 */
+.home__description {
+  text-align: center; /* TEXT를 가운데 정렬해주는 옵션*/
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.home__description p:nth-of-type(1) {
+  /* p태그의 첫번째에 css 적용 */
+  margin-top: 3rem;
+  font-size: 48px;
+  font-weight: 900;
+}
+.home__description span:nth-of-type(2) {
+  /* span태그의 두번째 값 */
+  color: var(--dark-gray); /* ACADEMY의 글씨 색상 변경 */
+}
+
+.home__description p:nth-of-type(n) {
+  /* n으로 두면 p태그 모두가 설정된다. (p만쓰는 것과 같은 동작원리)*/
+  margin-top: 3rem;
+}
+
+.home__description p:nth-of-type(8) {
+  margin-top: 8rem;
+}
+
+.home__description p:nth-of-type(9) {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.home__description span.bold {
+  /* 중간중간 굵게 만들어줄 css
+  */
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.home__description__logo-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--logo-background);
+
+  margin-top: 10rem;
+}
+
+.home__description__logo {
+  color: white;
+  font-size: 100px;
+  margin-top: 15px;
+  font-weight: 900;
+}
+
+/* learn-skills */
+.home__learn-skills__list {
+}
+.home__learn-skills__list__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 50px;
+}
+.home__learn-skills__list__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.home__learn-skills__list__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home__learn-skills__list__box p {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.home__learn-skills__list__box img {
+  width: 150px;
+}
+.home__learn-skills__title {
+  color: var(--dark-gray);
+  margin-top: 20rem;
+}
+
+.home__learn-skills__title .bold {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.home__learn-skills__title__flex-box {
+  display: flex;
+  color: var(--main-color);
+}
+
+.home__learn-skills__container {
+  width: 70%;
+  margin: 5rem auto;
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px; /* 테두리를 원처럼 보여주게 하는 속성 */
+  padding: 3rem;
+  position: relative;
+}
+
+/* 스킬 선택 */
+.home__learn-skills__select-skill {
+  width: 50%;
+  position: absolute; /* 요소를 부모요소를 기준으로 띄우기 위함*/
+  top: -25px; /* box의 크기가 50px이므로 선에 딱 걸치도록*/
+  display: flex; /* 요소들 정렬을 위함 */
+  justify-content: space-between; /* 박스들에게 적당한 여백을 주고 정렬 */
+}
+
+.home__learn-skills__skill-box {
+  display: flex; /* 글씨 중앙정렬 */
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--soft-grey);
+  color: black;
+  font-weight: 700;
+  cursor: pointer; /* 커서모양 변경 */
+}
+
+.home__learn-skills__skill-box:hover {
+  /* HOVER시 색이 변동되도록*/
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.home__learn-skills__select-skill .selected /* 현재 선택된 영역 */ {
+  color: white;
+  background-color: var(--dark-gray);
+}
+
+.home__learn-skills__flex-box {
+  display: flex;
+  justify-content: space-around; /* 요소를 가로로 유연하게 정렬*/
+}
+
+.home__learn-skills__flex-box:last-child {
+  align-items: flex-end; /* 요소를 아래로 정렬 */
+  margin-top: -2rem; /* 박스가 겹쳐 보이게끔 -값을 마진을 준다. */
+}
+
+.home__learn-skills__step {
+  width: 20%;
+  border-radius: 20px; /* 테두리를 원처럼 보여주게 하는 속성 */
+  color: white;
+  padding: 2rem;
+}
+
+.home__learn-skills__step p:first-child {
+  margin-bottom: 2rem;
+}
+
+.home__learn-skills__flex-box .step1 {
+  height: 100px;
+  background-color: var(--dark-gray);
+}
+
+.home__learn-skills__flex-box .step2 {
+  height: 160px;
+  background-color: var(--main-color);
+}
+
+.home__learn-skills__flex-box .step3 {
+  height: 100px;
+  background-color: var(--soft-grey);
+  color: black;
+}
+
+.home__learn-skills__flex-box .step4 {
+  height: 160px;
+  background-color: var(--soft-grey);
+  color: black;
+}
+.home__learn-skills__flex-box .step5 {
+  height: 100px;
+  background-color: var(--dark-gray);
+}
+.home__learn-skills__flex-box .step6 {
+  height: 160px;
+  background-color: var(--main-color);
+}
+
+/* ICON AREA */
+
+.home__icon-area__title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 10rem;
+}
+.home__icon-area__title span:nth-of-type(2) {
+  color: var(--main-color);
+}
+
+.home__icon__subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  margin-top: 10rem;
+  font-weight: 900;
+}
+
+.home__icon__subtitle span:nth-of-type(1) {
+  color: var(--main-color);
+}
+
+.home__icon__icon-box {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.home__icon__icon-box img {
+  width: 100px;
+}
+
+/* REASON AREA*/
+.home__why {
+  margin-top: 20rem;
+}
+
+.home__why__title {
+  width: 300px;
+  margin-left: auto;
+}
+
+.home__why__title p:nth-of-type(1) {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+
+.home__why__title p:nth-of-type(2) {
+  display: flex;
+  justify-content: right;
+  font-size: 50px;
+  font-weight: 900;
+}
+.home__why__title p:nth-of-type(3),
+.home__why__title p:nth-of-type(4) {
+  font-size: 20px;
+  display: flex;
+  justify-content: right;
+  color: var(--main-color);
+}
+
+.home__why__box-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home__why__box {
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__why__box:nth-child(2n-1) {
+  background-color: var(--dark-gray);
+}
+
+.home__why__box:nth-child(2n) {
+  background-color: var(--main-color);
+}
+
+.home__why__box img {
+  width: 200px;
+}
+
+.footer {
+  margin-top: 20rem;
+  padding: 4rem 2rem;
+  background-color: var(--footer-back);
+  color: var(--footer-font);
+}
+
+.footer p:first-of-type {
+  margin-bottom: 3rem;
+}

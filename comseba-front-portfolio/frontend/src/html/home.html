@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/home.css" />
+    <title>홈페이지</title>
+  </head>
+  <body>
+    <div class="home">
+      <header class="home__header">
+        <img src="../../images/comseba_logo.png" alt="컴세바로고" />
+        <div class="home__header__right">
+          <a href="/map">오시는 길</a>
+          <a href="/guest">방명록</a>
+        </div>
+      </header>
+      <link rel="import" href="../html/header.html" />
+      <div class="home__intro">
+        <div class="home__intro__left">
+          <div class="home__intro__left__text">
+            <p>안녕하세요,</p>
+            <p>IT교육 전문 <br />컴세바학원입니다</p>
+            <p>IT specialized educational institutions</p>
+          </div>
+          <button
+            class="home__intro__left__rink-btn border-box"
+            onclick="moveComsebaPage()"
+          >
+            더 자세한 정보 보기
+          </button>
+          <div class="home__intro__left__sns">
+            <img
+              src="../../images/youtube.svg"
+              onclick="moveComsebaYoutube()"
+              alt=""
+            />
+            <p>in</p>
+            <img
+              src="../../images/instagram.svg"
+              onclick="moveComsebaInstagram()"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="home__intro__right">
+          <img src="../../images/coding_person.png" alt="" />
+        </div>
+      </div>
+      <div class="home__description">
+        <div class="home__description__logo-container">
+          <div class="home__description__logo">C</div>
+        </div>
+        <p><span>COMSEBA </span><span> ACADEMY</span></p>
+        <p>4차 산업혁명은 이미 시작되었습니다.</p>
+        <p>
+          불과 10년 전만 하더라도 컴퓨터를 배운다는 것은 하나의
+          <span class="bold">색다른 도전</span>이었습니다.<br />
+          그러나 오늘날에 있어 컴퓨터를 배운다는 것은
+          <span class="bold">필연적인 도전</span>입니다.
+          <br />
+          컴퓨터를 모르고서는 앞으로의 시대를 읽어나갈 능력을 기를 수 없습니다.
+        </p>
+        <p>
+          컴세바는 학생들에게 단순히 컴퓨팅 능력만을 배양하고 싶지는
+          않습니다.<br />
+          다가올 미래는 컴퓨팅 능력뿐만이 아닌 개개인이 가지고 있는<br />
+          <span class="bold">개별적 능력과 개성</span>,그리고
+          <span class="bold">독특함과 창의력</span>이 주된 무기가 될 수 있는
+          시대입니다.
+        </p>
+        <p>
+          컴퓨터만 잘한다고 살아남을 수 있는 세상은 아닙니다.<br />
+          물론 컴퓨터를 잘하면 많은 이점이 있을 것입니다. <br />그러나
+          <span class="bold">컴세바</span>는 거기에
+          <span class="bold">안주</span>하지 않습니다.
+        </p>
+        <p>
+          <span class="bold">컴퓨팅 능력과 창의력</span>을 동시에, 단순히 배우는
+          것뿐만이 아닌 내가 직접 만들어보고 경험해보는 것이
+          <span class="bold">컴세바 교육</span>의 핵심입니다.
+        </p>
+        <p>학생들에게 가장 필요한 능력들을 컴세바는 만들어냅니다.</p>
+        <p>
+          컴퓨터는 실전 능력으로, 창의력은 IT독서논술로, 창작능력은 창작물을
+          통해!
+        </p>
+        <p>앞으로 컴세바가 그려낼 미래는 IT, 그 자체입니다.</p>
+      </div>
+      <div class="home__learn-skills">
+        <div class="home__learn-skills__list">
+          <div class="home__learn-skills__list__title">Learn Skills</div>
+          <div class="home__learn-skills__list__flex">
+            <div class="home__learn-skills__list__box">
+              <p>Python</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+            <div class="home__learn-skills__list__box">
+              <p>JAVA</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+            <div class="home__learn-skills__list__box">
+              <p>C++</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+            <div class="home__learn-skills__list__box">
+              <p>C</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+          </div>
+          <div class="home__learn-skills__list__flex">
+            <div class="home__learn-skills__list__box">
+              <p>ALGORITHM</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+            <div class="home__learn-skills__list__box">
+              <p>HTML</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+            <div class="home__learn-skills__list__box">
+              <p>CSS</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+            <div class="home__learn-skills__list__box">
+              <p>JAVASCRIPT</p>
+              <img src="../../images/hexagonGroup.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="home__learn-skills__title">
+          <p class="bold">소개</p>
+          <div class="home__learn-skills__title__flex-box">
+            <p class="bold">대표 커리큘럼</p>
+            <div>
+              <p>Let me introduce the representative</p>
+              <p>curriculum of Comseva</p>
+            </div>
+          </div>
+        </div>
+        <div class="home__learn-skills__container">
+          <div class="home__learn-skills__select-skill">
+            <div class="home__learn-skills__skill-box">C</div>
+            <div class="home__learn-skills__skill-box selected">JAVA</div>
+            <div class="home__learn-skills__skill-box">Python</div>
+            <div class="home__learn-skills__skill-box">AI</div>
+          </div>
+          <div class="home__learn-skills__flex-box">
+            <div class="home__learn-skills__step step1">
+              <p>STEP 1</p>
+              <p></p>
+            </div>
+            <div class="home__learn-skills__step step2">
+              <p>STEP 2</p>
+              <p></p>
+            </div>
+            <div class="home__learn-skills__step step3">
+              <p>STEP 3</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="home__learn-skills__flex-box">
+            <div class="home__learn-skills__step step4">
+              <p>STEP 4</p>
+              <p></p>
+            </div>
+            <div class="home__learn-skills__step step5">
+              <p>STEP 5</p>
+              <p></p>
+            </div>
+            <div class="home__learn-skills__step step6">
+              <p>STEP 6</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home__icon-area">
+        <div class="home__icon-area__title">
+          <p><span>COMSEBA </span><span> ACADEMY</span></p>
+        </div>
+        <div class="home__icon__subtitle">
+          <p><span>다양한 </span><span> 언어수업</span></p>
+        </div>
+        <div class="home__icon__icon-box">
+          <img src="../../images/jsIcon.svg" alt="" />
+          <img src="../../images/pythonIcon.svg" alt="" />
+          <img src="../../images/eIcon.svg" alt="" />
+        </div>
+        <div class="home__icon__subtitle">
+          <p><span>다양한 </span><span> 기술스택</span></p>
+        </div>
+        <div class="home__icon__icon-box">
+          <img src="../../images/htmlIcon.svg" alt="" />
+          <img src="../../images/cssIcon.svg" alt="" />
+          <img src="../../images/jsIcon2.svg" alt="" />
+          <img src="../../images/reactIcon.svg" alt="" />
+        </div>
+      </div>
+      <div class="home__why">
+        <div class="home__why__title">
+          <p>WHY</p>
+          <p>COMSEBA?</p>
+          <p>From the beginning to the end,</p>
+          <p>high quality perfection to the top</p>
+        </div>
+        <div class="home__why__box-container">
+          <div class="home__why__box">
+            <img src="../../images/whyComseba1.svg" alt="" />
+          </div>
+          <div class="home__why__box">
+            <img src="../../images/whyComseba2.svg" alt="" />
+          </div>
+          <div class="home__why__box">
+            <img src="../../images/whyComseba3.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        (주)한아연사업자번호 : 251-81-01678 : 032-822-4300 & 010-4591-8351
+        (월~목 2-10시/토,일 1-7시/금요일휴무)
+      </p>
+
+      <p>
+        컴세바써니랩컴퓨터학원 : 인천광역시 연수구 동춘동 937-9 대광빌딩 5층 :
+      </p>
+      <p>
+        032-822-4300 컴세바컴퓨터학원(정왕점) : 경기도 시흥시 정왕신길로 49번길
+      </p>
+      <p>
+        63, 금강빌딩 3층 : 031-434-5586 인천진로직업센터 : 인천광역시 연수구
+      </p>
+      <p>
+        동춘동 조이빌딩 4층 : 032-822-0984 한국IT교육연구소 : 인천광역시 연수구
+      </p>
+      <p>동춘동 123빌딩 7층 : 032-822-8881</p>
+    </footer>
+    <script src="/src/js/home.js"></script>
+  </body>
+</html>
