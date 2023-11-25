@@ -314,6 +314,60 @@
         <!-- <button type="button" class="btn-cls">이벤트 버튼2</button> -->
         <!-- <button type="button" onclick="alert('이벤트 버튼3')">이벤트 버튼3</button> -->
         <!-- <button type="buttodn" id="btn-id2">이벤트 버튼4</button> -->
+
+        <!-- 2023.11.25 -->
+        <!-- 인라인 방식 -->
+        <!-- width: 가로 크기, height: 세로 크기, background: 배경색깔 -->
+        <div style="width: auto; height: 100px; background: gray;"></div>
+        <span style="width: 100px; height: 100px; background: green;">test test</span>
+
+        <!-- 외부 스타일 시트 -->
+        <!-- ID 접근자 (#), 클래스 접근자 (.) -->
+        <div id="ex-div"></div>
+
+
+        <!-- 인라인 스타일 -->
+        <!-- width: 가로 너비, height: 세로 너비, border: 경계선 굵기, 선 모양, 선 색깔  -->
+        <div style="width: 500px; height: 300px; border: 4px solid tomato; margin: 20px;">
+            <div style="max-width: 400px; min-width: 200px; width: 100%; height: 200px; background: orange;"></div>
+        </div>
+
+        <!-- 외부 스타일 시트 (id, class) -->
+        <div class="ex-div2">
+            <div class="ex-div3"></div>
+        </div>
+
+        <!-- 스타일 parent 1개, child 1개 -->
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+
+        <!-- 줄바꿈 -->
+        <br/>
+
+        <!-- 텍스트 속성 -->
+        <p>글꼴 관리</p>
+        <p class="style">글꼴 관리</p>
+        <p id="style">글꼴 관리</p>
+
+
+        <!-- 글꼴 설정 (인라인 스타일 + 외부 스타일 시트) -->
+        <p id="style" style="font-family: serif;">글꼴 관리</p>
+        <p id="style" style="font-family: sans-serif;">글꼴 관리</p>
+        <p id="style" style="font-family: cursive;">글꼴 관리</p>
+        <p id="style" style="font-family: fantasy;">글꼴 관리</p>
+
+
+        <!-- 스타일2,3에 따라 글꼴 색깔 설정  -->
+        <p class="style2">글꼴 색깔</p>
+        <p class="style3">글꼴 색깔</p>
+
     </form>
 </body>
 

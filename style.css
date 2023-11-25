@@ -1,7 +1,72 @@
-* {
+.style2 {
+  font-size: 30px;
+  color: red;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.style3 {
+  font-size: 30px;
+  color: rgb(255,0,0);
+  text-shadow: 0cqh;
+}
+
+/* p:nth-child(1) {
+  font-size: 30px;
+  color: red;
+}
+
+p:nth-child(2) {
+  font-size: 30px;
+  color: blue;
+} */
+
+/* p {
+  font-size: 40px;
+  line-height: 32px;
+} */
+
+.style {
+  font-size: 40px;
+  line-height: 32px;
+}
+#style {
+  font-size: 40px;
+  line-height: 32px;
+}
+
+
+.parent {
+
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  float: left;
+  margin: 20px;
+}
+
+#ex-div {
+  width: auto; 
+  height: 100px; 
+  background: gray;
+}
+
+.ex-div2 {
+  width: 500px; height: 300px; border: 4px solid tomato; margin: 20px;
+}
+
+.ex-div3 {
+  max-width: 400px; min-width: 200px; width: 100%; height: 200px; background: orange;
+}
+
+
+/* p {
     color: red;
     font-size: 16px;
-}
+} */
 
 /* ID 접근 (#) */
 #in-txt {
