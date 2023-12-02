@@ -37,13 +37,14 @@
           font-size: 16px;
         }  
       </style> -->
-      <!-- <P>sdsdd</P> -->
+    <!-- <P>sdsdd</P> -->
 
     <!-- 외부 스타일 시트 -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <!-- HTML 영역 -->
+
 <body>
     <!-- ======================================================================= -->
     <!-- 2023.11.04 -->
@@ -115,11 +116,11 @@
     <!-- <img src="https://img.freepik.com/free-photo/the-red-or-white-cat-i-on-white-studio_155003-13189.jpg?size=626&ext=jpg"> -->
 
     <!-- <video id="videoId" width="100%" height="720" controls="" preload="auto" muted autoplay> -->
-    	<!-- <source src="http://nmsc.kma.go.kr/upload/video/1030_위성센터홍보영상.mp4" type="video/mp4"> -->
-   	<!-- </video> -->
+    <!-- <source src="http://nmsc.kma.go.kr/upload/video/1030_위성센터홍보영상.mp4" type="video/mp4"> -->
+    <!-- </video> -->
 
     <!-- https://img.freepik.com/free-photo/the-red-or-white-cat-i-on-white-studio_155003-13189.jpg?size=626&ext=jpg&ga=GA1.1.1602037022.1699665445&semt=sph -->
-   
+
     <!-- 테이블 태그 -->
     <table>
         <!-- 테이블 제목 -->
@@ -216,7 +217,7 @@
         <input type="text" placeholder="입력" />
 
     </form>
-    
+
     <!-- 입력양식 태그 -->
     <form>
         <!-- 텍스트 필드 -->
@@ -250,7 +251,7 @@
         <!-- 날짜/시간 (년월일 시분초) -->
         <input type="datetime-local" />
         <br>
- 
+
         <!-- 날짜 (년월일) -->
         <input type="date" />
         <br>
@@ -284,91 +285,114 @@
         <button type="submit">전송 버튼</button>
         <button type="reset">초기화 버튼</button>
         <br>
-
-
-        <!-- CSS 기본 및 복합 선택자 -->
-        <!-- 1) 인라인 스타일 (Inline Styles)  -->
-        <p style="color: blue; font-size: 20px;">이것은 20px 청색 글자입니다.</p>
-        <p style="color: red; font-size: 30px;">이것은 30px 빨강 글자입니다.</p>
-        <p style="color: green; font-size: 40px;">이것은 40px 초록색 글자입니다.</p>
-
-        <!-- 2) 내부 스타일 시트 (Internal Style Sheet) -->
-        <p>빨강색 16px</p>
- 
-        <p style="color: green; font-size: 50px">텍스트 50px 초록색 (인라인 방법)</p>
-        <p id="in-txt">텍스트 50px 초록색 (내부 스타일 시트-id)</p>
-        <p class="in-txt">텍스트 50px 초록색 (내부 스타일 시트-id)</p>
-
-
-        <p id="in-title">이것은 빨간색 글자입니다.</p>
-        <p class="in-title">이것은 주황색 글자입니다.</p>
-
-        
-        <!-- 3) 외부 스타일 시트 (External Style Sheet) -->
-        <p id="ex-title">이것은 회색 50px 글자입니다.</p>
-        <!-- <p class="ex-title">이것은 주황색 60px 글자입니다.</p> -->
-
-        <!-- 자바스크립트 11주차 소개 -->
-        <!-- 전역 속성을 위한 버튼 태그 -->
-        <!-- <button type="button" id="btn-id">이벤트 버튼</button> -->
-        <!-- <button type="button" class="btn-cls">이벤트 버튼2</button> -->
-        <!-- <button type="button" onclick="alert('이벤트 버튼3')">이벤트 버튼3</button> -->
-        <!-- <button type="buttodn" id="btn-id2">이벤트 버튼4</button> -->
-
-        <!-- 2023.11.25 -->
-        <!-- 인라인 방식 -->
-        <!-- width: 가로 크기, height: 세로 크기, background: 배경색깔 -->
-        <div style="width: auto; height: 100px; background: gray;"></div>
-        <span style="width: 100px; height: 100px; background: green;">test test</span>
-
-        <!-- 외부 스타일 시트 -->
-        <!-- ID 접근자 (#), 클래스 접근자 (.) -->
-        <div id="ex-div"></div>
-
-
-        <!-- 인라인 스타일 -->
-        <!-- width: 가로 너비, height: 세로 너비, border: 경계선 굵기, 선 모양, 선 색깔  -->
-        <div style="width: 500px; height: 300px; border: 4px solid tomato; margin: 20px;">
-            <div style="max-width: 400px; min-width: 200px; width: 100%; height: 200px; background: orange;"></div>
-        </div>
-
-        <!-- 외부 스타일 시트 (id, class) -->
-        <div class="ex-div2">
-            <div class="ex-div3"></div>
-        </div>
-
-        <!-- 스타일 parent 1개, child 1개 -->
-        <div class="parent">
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-        </div>
-
-        <!-- 줄바꿈 -->
-        <br/>
-
-        <!-- 텍스트 속성 -->
-        <p>글꼴 관리</p>
-        <p class="style">글꼴 관리</p>
-        <p id="style">글꼴 관리</p>
-
-
-        <!-- 글꼴 설정 (인라인 스타일 + 외부 스타일 시트) -->
-        <p id="style" style="font-family: serif;">글꼴 관리</p>
-        <p id="style" style="font-family: sans-serif;">글꼴 관리</p>
-        <p id="style" style="font-family: cursive;">글꼴 관리</p>
-        <p id="style" style="font-family: fantasy;">글꼴 관리</p>
-
-
-        <!-- 스타일2,3에 따라 글꼴 색깔 설정  -->
-        <p class="style2">글꼴 색깔</p>
-        <p class="style3">글꼴 색깔</p>
-
     </form>
+
+    <!-- CSS 기본 및 복합 선택자 -->
+    <!-- 1) 인라인 스타일 (Inline Styles)  -->
+    <p style="color: blue; font-size: 20px;">이것은 20px 청색 글자입니다.</p>
+    <p style="color: red; font-size: 30px;">이것은 30px 빨강 글자입니다.</p>
+    <p style="color: green; font-size: 40px;">이것은 40px 초록색 글자입니다.</p>
+
+    <!-- 2) 내부 스타일 시트 (Internal Style Sheet) -->
+    <p>빨강색 16px</p>
+
+    <p style="color: green; font-size: 50px">텍스트 50px 초록색 (인라인 방법)</p>
+    <p id="in-txt">텍스트 50px 초록색 (내부 스타일 시트-id)</p>
+    <p class="in-txt">텍스트 50px 초록색 (내부 스타일 시트-id)</p>
+
+
+    <p id="in-title">이것은 빨간색 글자입니다.</p>
+    <p class="in-title">이것은 주황색 글자입니다.</p>
+
+
+    <!-- 3) 외부 스타일 시트 (External Style Sheet) -->
+    <p id="ex-title">이것은 회색 50px 글자입니다.</p>
+    <!-- <p class="ex-title">이것은 주황색 60px 글자입니다.</p> -->
+
+    <!-- 자바스크립트 11주차 소개 -->
+    <!-- 전역 속성을 위한 버튼 태그 -->
+    <!-- <button type="button" id="btn-id">이벤트 버튼</button> -->
+    <!-- <button type="button" class="btn-cls">이벤트 버튼2</button> -->
+    <!-- <button type="button" onclick="alert('이벤트 버튼3')">이벤트 버튼3</button> -->
+    <!-- <button type="buttodn" id="btn-id2">이벤트 버튼4</button> -->
+
+    <!-- 2023.11.25 -->
+    <!-- 인라인 방식 -->
+    <!-- width: 가로 크기, height: 세로 크기, background: 배경색깔 -->
+    <div style="width: auto; height: 100px; background: gray;"></div>
+    <span style="width: 100px; height: 100px; background: green;">test test</span>
+
+    <!-- 외부 스타일 시트 -->
+    <!-- ID 접근자 (#), 클래스 접근자 (.) -->
+    <div id="ex-div"></div>
+
+
+    <!-- 인라인 스타일 -->
+    <!-- width: 가로 너비, height: 세로 너비, border: 경계선 굵기, 선 모양, 선 색깔  -->
+    <div style="width: 500px; height: 300px; border: 4px solid tomato; margin: 20px;">
+        <div style="max-width: 400px; min-width: 200px; width: 100%; height: 200px; background: orange;"></div>
+    </div>
+
+    <!-- 외부 스타일 시트 (id, class) -->
+    <div class="ex-div2">
+        <div class="ex-div3"></div>
+    </div>
+
+    <!-- 스타일 parent 1개, child 1개 -->
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+    <!-- 줄바꿈 -->
+    <br />
+
+    <!-- 텍스트 속성 -->
+    <p>글꼴 관리</p>
+    <p class="style">글꼴 관리</p>
+    <p id="style">글꼴 관리</p>
+
+
+    <!-- 글꼴 설정 (인라인 스타일 + 외부 스타일 시트) -->
+    <p id="style" style="font-family: serif;">글꼴 관리</p>
+    <p id="style" style="font-family: sans-serif;">글꼴 관리</p>
+    <p id="style" style="font-family: cursive;">글꼴 관리</p>
+    <p id="style" style="font-family: fantasy;">글꼴 관리</p>
+
+
+    <!-- 스타일2,3에 따라 글꼴 색깔 설정  -->
+    <p class="style2">글꼴 색깔</p>
+    <p class="style3">글꼴 색깔</p>
+
+    <!-- 2023.12.02 -->
+    <div class="ex01-parent">
+        <div class="ex01-child"></div>
+    </div>
+
+    <div class="ex02-parent">
+        <div class="ex02-child">1</div>
+        <div class="ex02-child ex02-absolute">2</div>
+        <div class="ex02-child">3</div>
+    </div>
+
+    <div class="ex03-parent">
+        <div class="ex03-child ex03-box1">1</div>
+        <div class="ex03-child ex03-box2">2</div>
+        <div class="ex03-child ex03-box3">3</div>
+        <div class="ex03-child ex03-box4">4</div>
+        <div class="ex03-child ex03-box5">5</div>
+    </div>
+
+
+    <div class="ex04-div"></div>
+
+
+
 </body>
 
 
