@@ -141,8 +141,7 @@ p:nth-child(2) {
   line-height: 32px;
 }
 
-.parent {
-}
+/* .parent {} */
 
 .child {
   width: 100px;
