@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- CSS 스타일 영역 -->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <!-- CSS 스타일 시트 영역 -->
-
-    <!-- 내부 스타일 시트 -->
     <!-- <style>
         p {
             color: red;
@@ -44,7 +41,6 @@
 </head>
 
 <!-- HTML 영역 -->
-
 <body>
     <!-- ======================================================================= -->
     <!-- 2023.11.04 -->
@@ -311,10 +307,10 @@
 
     <!-- 자바스크립트 11주차 소개 -->
     <!-- 전역 속성을 위한 버튼 태그 -->
-    <!-- <button type="button" id="btn-id">이벤트 버튼</button> -->
-    <!-- <button type="button" class="btn-cls">이벤트 버튼2</button> -->
-    <!-- <button type="button" onclick="alert('이벤트 버튼3')">이벤트 버튼3</button> -->
-    <!-- <button type="buttodn" id="btn-id2">이벤트 버튼4</button> -->
+    <button type="button" id="btn-id">이벤트 버튼</button>
+    <button type="button" class="btn-cls">이벤트 버튼2</button>
+    <button type="button" onclick="alert('이벤트 버튼3')">이벤트 버튼3<button>
+    <button type="buttodn" id="btn-id2">이벤트 버튼4</button>
 
     <!-- 2023.11.25 -->
     <!-- 인라인 방식 -->
@@ -392,29 +388,37 @@
     <div class="ex04-div"></div>
 </body>
 
+<!-- JS 자바스크립트 영역 -->
 
+<!-- 내부 JS 적용 -->
+<script>
+    console.log("Hellow World");
+    document.write("Hello Wolrd3")
+</script>
 
-<!-- 자바스크립트 영역 -->
+<!-- 외부 JS 적용 -->
+<script src="test.js"></script>
+   
 <script>
     // id 접근 : 다양한 이벤트
     let idTag = document.getElementById("btn-id");
     idTag.addEventListener('click', function () {
         alert(idTag.textContent);
     });
-
+    
     // class 접근
     let clsTag = document.getElementsByClassName("btn-cls");
     clsTag[0].addEventListener('click', function () {
         alert(clsTag[0].textContent);
     });
-
+    
     // id 접근 (2) : 단순한 이벤트
     document.getElementById('btn-id2').onclick = function (e) {
         alert(e.target.textContent);
     };
-
+    
     // debugger;
-    // console.log(e)
+    console.log(e);
 </script>
 
 </html>
