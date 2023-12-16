@@ -71,3 +71,124 @@ console.log( `hello 1` );
 console.log( `hello name` );
 
 console.log( `hello ${name}` );
+
+// ==============================================
+// 2023.12.16
+// ==============================================
+// alert창
+// alert("Hello");
+
+// let age = prompt('나이를 입력해주세요.', 100);
+// alert(`당신의 나이는 ${age}살 입니다.`);
+
+// prompt창
+// let age2 = prompt('나이를 입력해주세요.', 100);
+// alert(`당신의 나이는 ${age2}살 입니다.`);
+
+// confirm창
+// let isBoss = confirm("당신이 주인 인가요?");
+// alert(isBoss);
+
+// 기본 연산자
+// 덧셈 +, 뺼셈 -, 곱셈 *, 나눗셈 /, 나머지 %, 거듭제곱 ** 
+let a2 = 2;
+let a4 = 4;
+
+console.log(a2 + a4);
+console.log(a2 - a4);
+console.log(a2 * a4);
+console.log(a2 / a4);
+console.log(a2 % a4);
+console.log(a2 ** a4);
+
+// 문자 연산자
+let s1 = "my";
+let s2 = "string";
+
+// 변수를 통해 연산
+// alert(s1 + s2);
+
+// 하드코딩을 통해 연산
+// alert("my" + "string");
+
+// 복합 (문자 + 숫자) 연산자
+// "12" 예상
+// alert( '1' + 2 );
+
+// '221'이 아니라 '41'이 출력
+// alert(2 + 2 + '1' );
+
+// 복합 (문자 + 숫자) 연산자 --> 문자화
+// alert( '1' + String(2) );
+// alert( '1' + (2).toString() );
+
+
+// 증가/감소 연산자
+let cnt = 2;
+cnt = cnt + 1;
+console.log(cnt);
+
+
+let cnt2 = 2;
+// 1씩 증가
+cnt2++;
+console.log(cnt2);
+
+// 1씩 감소
+cnt2--;
+console.log(cnt2);
+
+
+// 비교 연산자
+// 크다 >, 작다 <, 일치 ===, 불일치 !==
+
+// true
+// console.log( 2 > 1 );
+
+// false
+// console.log( 2 === 1 );
+
+// true
+// console.log( 2 !== 1 );
+
+// true
+// console.log( 1 === 1 );
+
+// true
+let result = 5 > 4;
+// console.log(result);
+
+// 자료형이 다른 값들끼리의 비교
+// 자료형을 일치
+// 문자열 <> 문자열, 숫자형 <> 숫자형
+// 문자열, 숫자형 비교
+
+// false
+// console.log(0 === "0");
+
+// true 문자열 변환
+// console.log(String(0) === "0");
+
+// true 숫자형 변환
+// console.log(0 === Number("0"));
+
+
+// 조건문
+// let year = prompt('올해는 몇년도일까요???', '');
+
+// if문
+// if (year === '2023') {
+//     alert('정답');
+// } 
+
+// if-else문
+// if (year === '2023') {
+//     alert('정답');
+// } else {
+//     alert('오답');
+// }
+
+// 조건부 연산자 (삼항 연산자)
+let year2 = prompt('올해는 몇년도일까요???', '');
+let resMsg = (year2 === '2023') ? '정답' : '오답';
+alert(resMsg);
