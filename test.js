@@ -189,6 +189,29 @@ let result = 5 > 4;
 // }
 
 // 조건부 연산자 (삼항 연산자)
-let year2 = prompt('올해는 몇년도일까요???', '');
-let resMsg = (year2 === '2023') ? '정답' : '오답';
-alert(resMsg);
+// let year2 = prompt('올해는 몇년도일까요???', '');
+// let resMsg = (year2 === '2023') ? '정답' : '오답';
+// alert(resMsg);
+
+// 문제3
+let number = prompt('숫자를 입력해주세요.');
+console.log(number);
+
+// 방법 1
+if (number > 0) console.log(1);
+if (number < 0) console.log(1);
+if (number === 0) console.log(0);
+
+
+// 방법 2
+if (number > 0) {
+    console.log(1);
+} else if (number < 0) {
+    console.log(1);
+} else {
+    console.log(0);
+}
+
+// 방법 3
+let resNum = (number == 0) ? 0 : 1;
+console.log(resNum);
