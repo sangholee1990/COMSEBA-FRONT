@@ -317,52 +317,199 @@ while (i < 3) {
 
 // 요일에 따른 메시지 출력
 // 현재 요일을 숫자로 반환 (0 = 일요일, 1 = 월요일, ..., 6 = 토요일)
-let day = new Date().getDay();
+// let day = new Date().getDay();
 
-switch (day) {
-  case 0:
-    console.log("오늘은 일요일입니다.");
-    break;
-  case 1:
-    console.log("오늘은 월요일입니다.");
-    break;
-  case 2:
-    console.log("오늘은 화요일입니다.");
-    break;
-  case 3:
-    console.log("오늘은 수요일입니다.");
-    break;
-  case 4:
-    console.log("오늘은 목요일입니다.");
-    break;
-  case 5:
-    console.log("오늘은 금요일입니다.");
-    break;
-  case 6:
-    console.log("오늘은 토요일입니다.");
-    break;
-  default:
-    console.log("알 수 없는 요일입니다.");
-}
+// switch (day) {
+//   case 0:
+//     console.log("오늘은 일요일입니다.");
+//     break;
+//   case 1:
+//     console.log("오늘은 월요일입니다.");
+//     break;
+//   case 2:
+//     console.log("오늘은 화요일입니다.");
+//     break;
+//   case 3:
+//     console.log("오늘은 수요일입니다.");
+//     break;
+//   case 4:
+//     console.log("오늘은 목요일입니다.");
+//     break;
+//   case 5:
+//     console.log("오늘은 금요일입니다.");
+//     break;
+//   case 6:
+//     console.log("오늘은 토요일입니다.");
+//     break;
+//   default:
+//     console.log("알 수 없는 요일입니다.");
+// }
 
 
 
 // 과일 이름에 따른 가격 출력
-let fruit = "사과";
+// let fruit = "사과";
 
-switch (fruit) {
-  case "바나나":
-    console.log("바나나는 1000원입니다.");
-    break;
-  case "사과":
-    console.log("사과는 2000원입니다.");
-    break;
-  case "오렌지":
-    console.log("오렌지는 1500원입니다.");
-    break;
-  case "포도":
-    console.log("포도는 3000원입니다.");
-    break;
-  default:
-    console.log("죄송합니다, 우리 가게에는 그 과일이 없습니다.");
+// switch (fruit) {
+//   case "바나나":
+//     console.log("바나나는 1000원입니다.");
+//     break;
+//   case "사과":
+//     console.log("사과는 2000원입니다.");
+//     break;
+//   case "오렌지":
+//     console.log("오렌지는 1500원입니다.");
+//     break;
+//   case "포도":
+//     console.log("포도는 3000원입니다.");
+//     break;
+//   default:
+//     console.log("죄송합니다, 우리 가게에는 그 과일이 없습니다.");
+// }
+
+
+// ==============================================
+// 2023.12.30
+// ==============================================
+// 배열 선언
+let arr = new Array();
+console.log(arr);
+
+let arr2 = [];
+console.log(arr2);
+
+// 배열 할당
+let fruits = ["사과", "오렌지", "자두"];
+console.log(fruits);
+
+// 배열 내 인덱스 항목 선택
+// 사과
+console.log(fruits[0]);
+
+// 오렌지
+console.log(fruits[1]);
+
+// 자두 TODO
+// alert(fruits[2])
+
+// 배열 개수
+console.log(fruits.length);
+
+// 배열 내 마지막 인덱스에서 "자두" 삭제
+console.log(fruits.pop());
+console.log(fruits);
+
+// 배열 내 마지막 인덱스에서 "배" 추가
+console.log(fruits.push("배"));
+console.log(fruits);
+
+
+// 배열 내 처음 인덱스에서 "사과" 삭제
+console.log(fruits.shift());
+console.log(fruits);
+
+// 배열 내 처음 인덱스에서 "귤" 추가
+console.log(fruits.unshift("귤"));
+console.log(fruits);
+
+// fruits에 대한 for 반복문
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
 }
+
+// fruits에 대한 for in 반복문
+for (let idx in fruits) {
+    console.log(fruits[idx]);
+}
+
+// fruits에 대한 forEach 반복문
+fruits.forEach(function(item, index, array) {
+    console.log(item, index, array);
+});
+
+
+// fruits에 대한 forEach 축약 반복문
+fruits.forEach(fruit => console.log(fruit));
+
+
+// let errfruits = null;
+// // (에러) errfruits에 대한 for 반복문
+// for (let i = 0; i < errfruits.length; i++) {
+//     console.log(errfruits[i]);
+// }
+
+// // (에러) errfruits에 대한 forEach 반복문
+// errfruits.forEach(function(item, index, array) {
+//     console.log(item, index, array);
+// });
+
+// 문제 1
+let fruitList = ["사과", "배", "오렌지"];
+
+let shoppingCart = fruitList;
+shoppingCart.push("바나나");
+
+console.log(shoppingCart);
+console.log(shoppingCart.length);
+
+// 문제2
+let arrs = ["Jazz", "Blues"];
+console.log(arrs);
+
+console.log(arrs.push("Rock-n-Roll"));
+console.log(arrs);
+
+arrs[1] = "Classics";
+console.log(arrs);
+
+console.log(arrs.shift());
+console.log(arrs);
+
+console.log(arrs.unshift("Rap", "Reggae"));
+// console.log(fruits.unshift("Reggae"));
+// console.log(fruits.unshift("Rap"));
+console.log(arrs);
+
+
+// concat 배열 추가
+let arr3 = [1, 2];
+console.log(arr3);
+
+// arr3 배열을 기준으로 배열 1차원 추가
+console.log(arr3.concat([3, 4]));
+
+// arr3 배열을 기준으로 배열 1차원 추가
+console.log(arr3.concat([3, 4], [5, 6]));
+
+
+// 바나나 키워드를 통해 찾기
+let fruits4 = ["사과", "배", "오렌지", "바나나", "바나나2"];
+
+fruits4.forEach(function(fruit) {
+    if (fruit.includes("바나나")) {
+        console.log(fruit);
+    }
+});
+
+
+// 바나나와 동일한 항목 추출
+let fruits5 = fruits4.filter(item => item === "바나나");console.log(fruits5);
+
+
+// 배열 정렬
+console.log(fruits4);
+fruits4.sort();
+console.log(fruits4);
+
+// 문제 2
+let arr8 = [5, 3, 8, 1];
+console.log(arr8);
+
+let ret = arr8.filter(item => 1 <= item && item <= 4);
+console.log(ret);
+
+
+// 문제4
+let arr9 = [5, 2, 1, -10, 8];
+console.log(ret.sort());
+console.log(ret.sort().reverse());
