@@ -266,13 +266,13 @@ let result = 5 > 4;
 
 // while문
 // let i = 0;
-let i = -999;
-while (i < 3) {
-    console.log(i);
+// let i = -999;
+// while (i < 3) {
+//     console.log(i);
 
-    i = i + 1;
-    // i++;
-}
+//     i = i + 1;
+//     // i++;
+// }
 
 
 // for문
@@ -371,145 +371,313 @@ while (i < 3) {
 // ==============================================
 // 2023.12.30
 // ==============================================
-// 배열 선언
-let arr = new Array();
-console.log(arr);
+// // 배열 선언
+// let arr = new Array();
+// console.log(arr);
 
-let arr2 = [];
-console.log(arr2);
+// let arr2 = [];
+// console.log(arr2);
 
-// 배열 할당
-let fruits = ["사과", "오렌지", "자두"];
-console.log(fruits);
+// // 배열 할당
+// let fruits = ["사과", "오렌지", "자두"];
+// console.log(fruits);
 
-// 배열 내 인덱스 항목 선택
-// 사과
-console.log(fruits[0]);
+// // 배열 내 인덱스 항목 선택
+// // 사과
+// console.log(fruits[0]);
 
-// 오렌지
-console.log(fruits[1]);
+// // 오렌지
+// console.log(fruits[1]);
 
-// 자두 TODO
-// alert(fruits[2])
+// // 자두 TODO
+// // alert(fruits[2])
 
-// 배열 개수
-console.log(fruits.length);
+// // 배열 개수
+// console.log(fruits.length);
 
-// 배열 내 마지막 인덱스에서 "자두" 삭제
-console.log(fruits.pop());
-console.log(fruits);
+// // 배열 내 마지막 인덱스에서 "자두" 삭제
+// console.log(fruits.pop());
+// console.log(fruits);
 
-// 배열 내 마지막 인덱스에서 "배" 추가
-console.log(fruits.push("배"));
-console.log(fruits);
-
-
-// 배열 내 처음 인덱스에서 "사과" 삭제
-console.log(fruits.shift());
-console.log(fruits);
-
-// 배열 내 처음 인덱스에서 "귤" 추가
-console.log(fruits.unshift("귤"));
-console.log(fruits);
-
-// fruits에 대한 for 반복문
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
-}
-
-// fruits에 대한 for in 반복문
-for (let idx in fruits) {
-    console.log(fruits[idx]);
-}
-
-// fruits에 대한 forEach 반복문
-fruits.forEach(function(item, index, array) {
-    console.log(item, index, array);
-});
+// // 배열 내 마지막 인덱스에서 "배" 추가
+// console.log(fruits.push("배"));
+// console.log(fruits);
 
 
-// fruits에 대한 forEach 축약 반복문
-fruits.forEach(fruit => console.log(fruit));
+// // 배열 내 처음 인덱스에서 "사과" 삭제
+// console.log(fruits.shift());
+// console.log(fruits);
 
+// // 배열 내 처음 인덱스에서 "귤" 추가
+// console.log(fruits.unshift("귤"));
+// console.log(fruits);
 
-// let errfruits = null;
-// // (에러) errfruits에 대한 for 반복문
-// for (let i = 0; i < errfruits.length; i++) {
-//     console.log(errfruits[i]);
+// // fruits에 대한 for 반복문
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
 // }
 
-// // (에러) errfruits에 대한 forEach 반복문
-// errfruits.forEach(function(item, index, array) {
+// // fruits에 대한 for in 반복문
+// for (let idx in fruits) {
+//     console.log(fruits[idx]);
+// }
+
+// // fruits에 대한 forEach 반복문
+// fruits.forEach(function(item, index, array) {
 //     console.log(item, index, array);
 // });
 
-// 문제 1
-let fruitList = ["사과", "배", "오렌지"];
 
-let shoppingCart = fruitList;
-shoppingCart.push("바나나");
+// // fruits에 대한 forEach 축약 반복문
+// fruits.forEach(fruit => console.log(fruit));
 
-console.log(shoppingCart);
-console.log(shoppingCart.length);
 
+// // let errfruits = null;
+// // // (에러) errfruits에 대한 for 반복문
+// // for (let i = 0; i < errfruits.length; i++) {
+// //     console.log(errfruits[i]);
+// // }
+
+// // // (에러) errfruits에 대한 forEach 반복문
+// // errfruits.forEach(function(item, index, array) {
+// //     console.log(item, index, array);
+// // });
+
+// // 문제 1
+// let fruitList = ["사과", "배", "오렌지"];
+
+// let shoppingCart = fruitList;
+// shoppingCart.push("바나나");
+
+// console.log(shoppingCart);
+// console.log(shoppingCart.length);
+
+// // 문제2
+// let arrs = ["Jazz", "Blues"];
+// console.log(arrs);
+
+// console.log(arrs.push("Rock-n-Roll"));
+// console.log(arrs);
+
+// arrs[1] = "Classics";
+// console.log(arrs);
+
+// console.log(arrs.shift());
+// console.log(arrs);
+
+// console.log(arrs.unshift("Rap", "Reggae"));
+// // console.log(fruits.unshift("Reggae"));
+// // console.log(fruits.unshift("Rap"));
+// console.log(arrs);
+
+
+// // concat 배열 추가
+// let arr3 = [1, 2];
+// console.log(arr3);
+
+// // arr3 배열을 기준으로 배열 1차원 추가
+// console.log(arr3.concat([3, 4]));
+
+// // arr3 배열을 기준으로 배열 1차원 추가
+// console.log(arr3.concat([3, 4], [5, 6]));
+
+
+// // 바나나 키워드를 통해 찾기
+// let fruits4 = ["사과", "배", "오렌지", "바나나", "바나나2"];
+
+// fruits4.forEach(function(fruit) {
+//     if (fruit.includes("바나나")) {
+//         console.log(fruit);
+//     }
+// });
+
+
+// // 바나나와 동일한 항목 추출
+// let fruits5 = fruits4.filter(item => item === "바나나");console.log(fruits5);
+
+
+// // 배열 정렬
+// console.log(fruits4);
+// fruits4.sort();
+// console.log(fruits4);
+
+// // 문제 2
+// let arr8 = [5, 3, 8, 1];
+// console.log(arr8);
+
+// let ret = arr8.filter(item => 1 <= item && item <= 4);
+// console.log(ret);
+
+
+// // 문제4
+// let arr9 = [5, 2, 1, -10, 8];
+// console.log(arr9.sort());
+// console.log(arr9.sort().reverse());
+
+
+// ==============================================
+// 2024.01.06
+// ==============================================
+// *****************************
+// 함수 선언
+// *****************************
+// 매개변수 X
+// 반환값 return X
+function showMsg() {
+    alert("안녕하세요");
+}
+
+// *****************************
+// 함수 호출/할당
+// *****************************
+// showMsg();
+
+// *****************************
+// 내부 변수 
+// *****************************
+function showMsg2() {
+    // 함수 내 지역변수
+    let msg = "안녕하세요2";
+    alert(msg);
+}
+
+// 함수 호출
+// showMsg2();
+
+// console.log(msg)
+
+// *****************************
+// 외부 변수
+// *****************************
+let userName = 'John';
+
+function showMsg3() {
+    // 함수 내 지역변수
+    let msg = "안녕하세요3";
+    alert(msg + userName);
+}
+
+// showMsg3();
+
+
+// *****************************
+// 매개 변수
+// *****************************
+// function showMsg4(from, text) {
+//     // 함수 내 지역변수
+//     let msg = from + " : "+ text;
+//     alert(msg);
+// }
+
+// showMsg4("Ann", "Hello");
+// showMsg4("Ann", "What's up?");
+
+
+// *****************************
+// 함수 기본값 
+// *****************************
+// function showMsg5(from = "Ann", text = "Hello") {
+//     // 함수 내 지역변수
+//     let msg = from + " : "+ text;
+//     alert(msg);
+// }
+
+// // 기본값으로 함수 호출
+// showMsg5();
+
+// // 매개변수를 통해 함수 호출
+// showMsg5("Ann", "What's up?");
+
+
+// *****************************
+// 함수 반환값
+// *****************************
+// function calc(a, b) {
+//     let sum = a + b;
+//     return sum;
+// }
+
+// let sumVal = calc(1, 2);
+// console.log(sumVal);
+
+// console.log(calc(100, 200));
+
+
+// *****************************
+// 함수 반환값2
+// *****************************
+// function checkAge(age) {
+//     if (age >= 18) {
+//         return true;
+//     } else {
+//         return confirm("보호자의 동의를 받으셨나요?");
+//     }
+// }
+
+// let age2 = prompt("나이를 알려주세요", 18);
+
+// if (checkAge(age2)) {
+//     alert("접속 허용");
+// } else {
+//     alert("접속 차단")
+// }
+
+// *****************************
+// 문제1
+// *****************************
+// function checkAge3(age) {
+//     if (age >= 18) {
+//         return true;
+//     } 
+        
+//     return confirm("보호자의 동의를 받으셨나요?");
+// }
+
+// let age3 = prompt("나이를 알려주세요", 18);
+
+// if (checkAge3(age3)) {
+//     alert("접속 허용");
+// } else {
+//     alert("접속 차단")
+// }
+
+// *****************************
 // 문제2
-let arrs = ["Jazz", "Blues"];
-console.log(arrs);
+// *****************************
+// function checkAge4(age) {
+//     return (age >= 18) ? true : confirm("보호자의 동의를 받으셨나요?");
+// }
 
-console.log(arrs.push("Rock-n-Roll"));
-console.log(arrs);
+// let age4 = prompt("나이를 알려주세요", 18);
 
-arrs[1] = "Classics";
-console.log(arrs);
-
-console.log(arrs.shift());
-console.log(arrs);
-
-console.log(arrs.unshift("Rap", "Reggae"));
-// console.log(fruits.unshift("Reggae"));
-// console.log(fruits.unshift("Rap"));
-console.log(arrs);
+// if (checkAge4(age4)) {
+//     alert("접속 허용");
+// } else {
+//     alert("접속 차단")
+// }
 
 
-// concat 배열 추가
-let arr3 = [1, 2];
-console.log(arr3);
+// *****************************
+// 문제3
+// *****************************
+// function min4(a, b) {
+//     return (a >= b) ? b : a;
+// }
 
-// arr3 배열을 기준으로 배열 1차원 추가
-console.log(arr3.concat([3, 4]));
+// console.log(min4(2, 5));
+// console.log(min4(3, -1));
+// console.log(min4(1, 1));
 
-// arr3 배열을 기준으로 배열 1차원 추가
-console.log(arr3.concat([3, 4], [5, 6]));
-
-
-// 바나나 키워드를 통해 찾기
-let fruits4 = ["사과", "배", "오렌지", "바나나", "바나나2"];
-
-fruits4.forEach(function(fruit) {
-    if (fruit.includes("바나나")) {
-        console.log(fruit);
-    }
-});
+// *****************************
+// 축약/화살표 함수
+// *****************************
+let sum3 = (a, b) => a + b;
+console.log( sum3(1, 2) );
+console.log( sum3(100, 200) );
 
 
-// 바나나와 동일한 항목 추출
-let fruits5 = fruits4.filter(item => item === "바나나");console.log(fruits5);
-
-
-// 배열 정렬
-console.log(fruits4);
-fruits4.sort();
-console.log(fruits4);
-
-// 문제 2
-let arr8 = [5, 3, 8, 1];
-console.log(arr8);
-
-let ret = arr8.filter(item => 1 <= item && item <= 4);
-console.log(ret);
-
-
-// 문제4
-let arr9 = [5, 2, 1, -10, 8];
-console.log(ret.sort());
-console.log(ret.sort().reverse());
+let sum4 = function(a, b) {
+    return a + b;
+}
+console.log( sum4(1, 2) );
+console.log( sum4(100, 200) );
