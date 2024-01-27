@@ -4,6 +4,9 @@
 // 개발자도구에서 콘솔 확인
 console.log("Hello World2");
 
+// 문제 1
+// alert("hellowWorld");
+
 // HTML 영역 확인
 document.write("Hello Wolrd3");
 
@@ -24,8 +27,13 @@ console.log(BIRTH_DAY);
 
 
 // 문제 1
-let admin = "John";
-let name = admin;
+// let admin, name;
+let admin;
+let name;
+
+name = "John";
+admin = name;
+
 // alert(admin);
 
 
@@ -67,12 +75,12 @@ age = 10;
 // console.log(age);
 
 name = "Ilya";
-// console.log( `hello ${1}` );
-// console.log( `hello 1` );
-// console.log( `hello ${"name"}` );
-// console.log( `hello name` );
+console.log( `hello ${1}` );
+console.log( `hello 1` );
+console.log( `hello ${"name"}` );
+console.log( `hello name` );
 
-// console.log( `hello ${name}` );
+console.log( `hello ${name}` );
 
 // ==============================================
 // 2023.12.16
@@ -686,87 +694,87 @@ function showMsg3() {
 // ==========================================
 // 2024.01.13
 // ==========================================
-// 객체 선언
-let user = {};
-let user2 = new Object();
+// // 객체 선언
+// let user = {};
+// let user2 = new Object();
 
-console.log(user);
+// console.log(user);
 
-// 객체 할당
-user = {
-    name: "John"
-    , age: 30
-}
-console.log(user);
+// // 객체 할당
+// user = {
+//     name: "John"
+//     , age: 30
+// }
+// console.log(user);
 
-// 객체 접근 (속성값 가져오기)
-// key-value (name-John)
-console.log(user.name);
-console.log(user.age);
+// // 객체 접근 (속성값 가져오기)
+// // key-value (name-John)
+// console.log(user.name);
+// console.log(user.age);
 
-console.log(user["name"]);
-console.log(user["age"]);
+// console.log(user["name"]);
+// console.log(user["age"]);
 
-// 객체 추가
-// 관리자 여부
-user.isAdmin = true;
-console.log(user);
+// // 객체 추가
+// // 관리자 여부
+// user.isAdmin = true;
+// console.log(user);
 
-// 객체 삭제 (age 속성)
-delete user.age; 
-console.log(user);
+// // 객체 삭제 (age 속성)
+// delete user.age; 
+// console.log(user);
 
-// 객체 반복문
-for (let key in user) {
+// // 객체 반복문
+// for (let key in user) {
 
-    // 키 name, age, isAdmin
-    console.log("key : " + key);
+//     // 키 name, age, isAdmin
+//     console.log("key : " + key);
 
-    // 키에 해당하는 값 John, 30, true
-    console.log("value : " + user[key]);
-};
+//     // 키에 해당하는 값 John, 30, true
+//     console.log("value : " + user[key]);
+// };
 
 
-// 문제 1
-user = {};
-console.log(user);
+// // 문제 1
+// user = {};
+// console.log(user);
 
-user.name = "John";
-console.log(user);
+// user.name = "John";
+// console.log(user);
 
-user.surname = "Smith";
-console.log(user);
+// user.surname = "Smith";
+// console.log(user);
 
-user.name = "Pete";
-console.log(user);
+// user.name = "Pete";
+// console.log(user);
 
-delete user.name;
-console.log(user);
+// delete user.name;
+// console.log(user);
 
-// 문제 4
-let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130
-};
+// // 문제 4
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// };
 
-let sum = 0;
-for (let key in salaries) {
-    let value = salaries[key]
-    sum = sum + value;
-};
+// let sum = 0;
+// for (let key in salaries) {
+//     let value = salaries[key]
+//     sum = sum + value;
+// };
 
-console.log(sum);
+// console.log(sum);
 
-// test.js 영역
-document.getElementById('id-mouseClick').addEventListener('click', function() {
-    console.log('id태그-마우스 클릭 버튼이 클릭되었습니다!');
-});
+// // test.js 영역
+// document.getElementById('id-mouseClick').addEventListener('click', function() {
+//     console.log('id태그-마우스 클릭 버튼이 클릭되었습니다!');
+// });
 
-// test.js 영역
-let eleList = document.getElementsByClassName('class-mouseClick');
-Array.from(eleList).forEach(function(element) {
-    element.addEventListener('click', function() {
-      console.log('class태그-마우스 클릭 버튼이 클릭되었습니다!');
-    });
-});
+// // test.js 영역
+// let eleList = document.getElementsByClassName('class-mouseClick');
+// Array.from(eleList).forEach(function(element) {
+//     element.addEventListener('click', function() {
+//       console.log('class태그-마우스 클릭 버튼이 클릭되었습니다!');
+//     });
+// });
