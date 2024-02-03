@@ -251,12 +251,140 @@
     <button type="reset">초기화/리셋 버튼</button> 
     <button>입력 버튼</button>
 
+    <!-- 2024.02.03 3장 -->
+    <textarea name="1" id="1" cols="60" rows="10">
+        손흥민이 2015 호주 아시안컵 호주와 결승전에서 패하고서 흘린 눈물을 9년 만에 시원하게 씻어냈습니다.
 
+        한국 축구대표팀은 3일(한국시간) 카타르 알와크라의 알자눕 스타디움에서 열린 2023 AFC 아시안컵 8강전에서 연장 접전 끝에 호주를 2-1로 꺾고 4강에 진출했습니다.
+
+        9년 전 한국은 연장 전반에 결승골을 내줬지만, 이날 결승골의 주인공은 손흥민이었습니다.
+
+        연장 전반 14분 황희찬이 얻어낸 프리킥을 오른발 감아차기 직접 슈팅으로 마무리해 한국에 승리를 안겼습니다.
+
+        9년 전 종료 휘슬이 울리자 분한 나머지 엉엉 울었던 손흥민, 오늘은 기쁘고 벅찬 감정에 한동안 그라운드에 엎드려 일어나지 못했습니다.
+
+        감정을 추스른 뒤엔 호주 선수 한 명 한 명에게 다가가 인사를 건넸습니다.
+
+        경기 중엔 파울을 범한 호주 어바인 선수에게 항의했었는데, 경기가 끝난 뒤엔 그를 따뜻하게 안아주는 모습도 포착됐습니다.
+
+        손흥민은 이날 승리가 9년 전 패배에 대한 복수라고 생각하는지 묻는 말에 "복수라기보다는 축구의 일부라고 생각한다"고 말했습니다.
+    </textarea>
+    <br>
+
+    <!-- 체크상자/체크박스에서 라벨링 -->
+    <!-- 1번째 방법 -->
+    <input type="checkbox" id="user-agreement" />
+    <label for="user-agreement">동의</label>
+
+    <!-- 2번째 방법 -->
+    <label>
+        <input type="checkbox" id="user-agreement" />미동의
+    </label>
+    <br>
+
+    <!-- 콤보 상자/셀렉트 박스 -->
+    <label>
+        메뉴 목록 : 
+        <select>
+            <optgroup label="Coffee">
+                <option>Americano</option>
+                <option>Caffe Mocha</option>
+                <option label="Cappuccino" value="Cappuccino"></option>
+            </optgroup>
+
+            <optgroup label="Latte">
+                <option>Caffe Latte</option>
+                <option>Vanilla Latte</option>
+            </optgroup>
+
+            <optgroup label="Smoothie" disabled>
+                <option>Plain</option>
+                <option>Strawberry</option>
+                <option>Banana</option>
+                <option>Mango</option>
+            </optgroup>
+        </select>
+    </label>
+
+    <!-- 전역속성 class - JS 연계 -->
+    <div class="hello">안녕</div>
+    <div class="hello hi">안녕2</div>
+
+    <!-- 전역속성 id - JS 연계 -->
+    <div id="hello2">안녕3</div>
+
+    <!-- 문제 -->
+    <label>
+        고객명 : <input type="text"/>
+    </label>
+    <br>
+
+    <label>
+        전화번호 : <input type="tel"/>
+    </label>
+    <br>
+
+    <label>
+        E-mail : <input type="text"/>
+    </label>
+    <br>
+
+    <label>
+        피자 선택 : 
+        <select>
+            <optgroup label="피자를 선택해주세요">
+                <option>피자</option>
+                <option>피자2</option>
+                <option>피자3</option>
+            </optgroup>
+        </select>
+    </label>
+
+    <fieldset>
+        <legend>피자 크기</legend>
+
+        <label>
+            <input type="radio" name="size" value="Small" />Small
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="size" value="Medium" />Medium
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="size" value="Large" />Large
+        </label>
+    </fieldset>
+
+    <label>
+        희망배송시간 : <input type="time"/>
+    </label>
+    <br>
+
+    <label>
+        <textarea name="1" id="1" cols="20" rows="5">
+
+        </textarea>
+    </label>
+    <br>
+
+    <button type="submit">주문하기</button>
+    
 </body>
 
 <!-- JS 또는 자바스크립트 영역: 근육 -->
 <script>
+    /* 중복 허용 */
+    let hello = document.getElementsByClassName("hello");
+    
+    // 주석 : Ctrl + /
+    // alert(hello[0].textContent);
+    // alert(hello[1].textContent);
 
+    let hello2 = document.getElementById("hello2");
+    alert(hello2.textContent);
 </script>
 
 
