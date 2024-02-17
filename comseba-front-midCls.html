@@ -6,6 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* ID 접근 (#) */
+        #id-span {
+            background: blue; 
+            font-size: 24px;
+        }
+
+        /* class 접근 (.) */
+        .class-span {
+            color: blue;
+            font-size: 20px
+        }
+
+    </style>
+
+     <!-- 외부 스타일 시트 -->
+     <link rel="stylesheet" type="text/css" href="1.css">
+     <link rel="stylesheet" type="text/css" href="helloworld.css">
+    
 </head>
 
 <!-- HTML 영역: 뼈대 -->
@@ -371,7 +391,46 @@
     <br>
 
     <button type="submit">주문하기</button>
-    
+    <br>
+
+    <!-- 2024.02.17 CSS 소개/예시 (인라인 스타일, 내부 스타일, 외부 스타일 -->
+
+    <!-- CSS 인라인 스타일: HTML 요소 + 스타일 속성 -->
+    <span>test</span>
+    <br>
+    <span style="background: green; font-size: 24px;">test2</span>
+
+    <!-- CSS 내부 스타일 -->
+    <!-- ID 접근자 (#), 클래스 접근자 (.) -->
+    <br>
+    <span id="id-span">test3</span>
+
+    <br>
+    <span class="class-span">test4</span>
+
+    <!-- CSS 외부 스타일 -->
+    <br>
+    <span id="id-span2">test5</span>
+
+    <br>
+    <span class="class-span2">test6</span>
+
+    <!-- 기본 선택자 (전체, 태그, 아이디, 클래스) -->
+    <div class="title">제목</div>
+    <p class="content">내용</p>
+
+    <!-- 복합 선택자 -->
+    <div class="news">
+        <div class="title blue">제목</div>
+        <p class="content" id="content">내용</p>
+
+        <ul id="fruit-list">
+            <li>사과</li>
+            <li>배</li>
+        </ul>
+    </div>
+    <p class="title">두번째 제목</p>
+
 </body>
 
 <!-- JS 또는 자바스크립트 영역: 근육 -->
