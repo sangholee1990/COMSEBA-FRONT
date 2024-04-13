@@ -69,3 +69,4 @@ console.log(age);
 age = null;
 console.log(age);
 
+// 2024.04.06 7주차 JS
