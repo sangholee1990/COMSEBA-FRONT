@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id 속성을 사용해서 요소 검색 -->
+    <div id="elem">
+        <div id="elem-cont">Element</div>
+    </div>
+
+     <!-- class 속성을 사용해서 요소 검색 -->
+    <div class="elem-cls">
+        <div id="elem-cls-cont">Element Cls</div>
+    </div>
+
+    <!-- 마우스 클릭 시 좌표 제공 -->
+    <input type="button" value="클릭해주세요." id="elem2">
+
+</body>
+<script src="20240511.js"></script>
+
+<script>
+    // id 속성을 사용해서 요소 검색
+    let elem = document.getElementById("elem");
+    elem.style.background = 'red';
+
+   // class 속성을 사용해서 요소 검색
+    let elemCls = document.getElementsByClassName("elem-cls");
+    elemCls[0].style.background = 'green';
+
+    // 마우스 클릭 시 좌표 제공
+    let elem2 = document.getElementById("elem2");
+    elem2.onclick = function(event) {
+        console.log("이벤트가 발생한 곳의 좌표는 " + event.clientX + ":" + event.clientY +"입니다.");
+    }
+</script>
+
+</html>
